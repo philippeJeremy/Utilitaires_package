@@ -9,5 +9,6 @@ description = "Mes outils Python réutilisables"
 authors = [{name = "Philippe Jeremy"}]
 requires-python = ">=3.10"
 
-[tool.setuptools]
-packages = ["utilitaires_package"]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["utilitaires_package*"]
