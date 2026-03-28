@@ -1,4 +1,4 @@
-# 🚀 Utilitaires Python
+# Utilitaires Python
 
 <p align="center">
   <b>Une boîte à outils simple et puissante pour automatiser ton quotidien</b><br>
@@ -24,7 +24,7 @@ Ce projet regroupe plusieurs classes utilitaires pour simplifier le développeme
 
 ---
 
-## 🧰 Modules
+## Modules
 
 | Module         | Description                              |
 | -------------- | ---------------------------------------- |
@@ -34,18 +34,18 @@ Ce projet regroupe plusieurs classes utilitaires pour simplifier le développeme
 
 ---
 
-## 📂 FileManager
+## FileManager
 
 > Simplifie toutes les opérations sur fichiers
 
-### 🚀 Features
+### Features
 
 * Création automatique de dossiers
 * Renommage intelligent
 * Copie / déplacement
 * Gestion des conflits (overwrite ou auto rename)
 
-### 💻 Exemple
+### Exemple
 
 ```python
 from utilis import FileManager
@@ -61,18 +61,18 @@ fm.transfer(new_file, "output/", mode="copy")
 
 ---
 
-## 📝 ProLogger
+## ProLogger
 
 > Un logger propre, lisible et configurable
 
-### 🚀 Features
+### Features
 
 * Console + fichiers
-* Logs colorés 🌈
+* Logs colorés 
 * Multi-niveaux (info, warning, error)
 * Facile à intégrer
 
-### 💻 Exemple
+### Exemple
 
 ```python
 from services import ProLogger
@@ -91,18 +91,18 @@ logger.error("Boom")
 
 ---
 
-## 📧 EmailSender
+## EmailSender
 
 > Envoi d’emails simple et rapide
 
-### 🚀 Features
+### Features
 
 * Support Gmail
 * CC / BCC
 * Pièces jointes 📎
 * Connexion sécurisée
 
-### 💻 Exemple
+### Exemple
 
 ```python
 from services import EmailSender
@@ -129,7 +129,7 @@ sender.close()
 
 ---
 
-## 🔐 Sécurité
+## Sécurité
 
 ⚠️ Important :
 
@@ -140,12 +140,12 @@ sender.close()
 ---
 
 
-## ⭐ Support
+## Support
 
 Si ce projet t’aide :
 
-👉 Laisse une ⭐ sur GitHub
-👉 Partage le projet
+Laisse une ⭐ sur GitHub
+Partage le projet
 
 ---
 
