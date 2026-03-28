@@ -2,8 +2,8 @@ from pathlib import Path
 from typing import Union
 import shutil
 import logging
-from utils.exceptions import FileAlreadyExistsError, InvalidModeError
-from utils.types import PathLike
+from .exceptions import FileAlreadyExistsError, InvalidModeError
+from .types import PathLike
 
 
 class FileManager:
