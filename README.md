@@ -32,6 +32,12 @@ Ce projet regroupe plusieurs classes utilitaires pour simplifier le développeme
 
 ---
 
+## Instalation
+
+pip install git+https://github.com/philippeJeremy/Utilitaires_package
+
+---
+
 ## FileManager
 
 > Simplifie toutes les opérations sur fichiers
