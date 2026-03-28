@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: mon-utils
+Version: 0.1.0
+Summary: Mes outils Python réutilisables
+Author: Philippe Jeremy
+Requires-Python: >=3.10
