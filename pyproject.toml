@@ -1,0 +1,10 @@
+[build-system]
+requires = ["Utilitaires"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mon-utils"
+version = "0.1.0"
+description = "Mes outils Python réutilisables"
+authors = [{name = "Philippe jérémy"}]
+requires-python = ">=3.10"
