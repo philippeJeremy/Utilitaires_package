@@ -40,7 +40,12 @@ class FileManager:
 
         if not source.is_file():
             raise FileNotFoundError(f"Fichier introuvable : {source}")
-        
+
+        # Si new_name n'a pas d'extension, on garde celle d'origine
+        new_path = Path(new_name)
+        if new_path.suffix == "":
+            new_name = f"{new_path.name}{source.suffix}"
+
         destination = self._resolve_destination(source.with_name(new_name))
 
         source.rename(destination)
