@@ -9,7 +9,7 @@ from .types import PathLike
 class FileManager:
     def __init__(self, overwrite: bool = False, auto_rename: bool = True, logger: logging.Logger | None = None,):
         self.overwrite = overwrite
-        self.auto_renames = auto_rename
+        self.auto_rename = auto_rename
         self.logger = logger or logging.getLogger(__name__)
 
     def _resolve_destination(self, destination: Path) -> Path:
