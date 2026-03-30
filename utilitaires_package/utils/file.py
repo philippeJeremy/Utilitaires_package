@@ -41,14 +41,21 @@ class FileManager:
         if not source.is_file():
             raise FileNotFoundError(f"Fichier introuvable : {source}")
 
+        source_ext = source.suffix
+
         new_path = Path(new_name)
 
-        # 👉 Si aucun suffixe → on garde celui d'origine
-        if new_path.suffix == "":
-            final_name = f"{new_path.name}{source.suffix}"
-        else:
-            # 👉 Si l'utilisateur met une extension, on la respecte
-            final_name = new_path.name
+        # Nettoyage intelligent
+        name = new_path.name
+
+        # Si l'extension d'origine est déjà dedans → on l'enlève
+        if source_ext in name:
+            name = name.replace(source_ext, "")
+
+        # Nettoyage des points finaux
+        name = name.rstrip(".")
+
+        final_name = f"{name}{source_ext}"
 
         destination = self._resolve_destination(source.with_name(final_name))
 
