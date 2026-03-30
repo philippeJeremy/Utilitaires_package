@@ -41,12 +41,16 @@ class FileManager:
         if not source.is_file():
             raise FileNotFoundError(f"Fichier introuvable : {source}")
 
-        # Si new_name n'a pas d'extension, on garde celle d'origine
         new_path = Path(new_name)
-        if new_path.suffix == "":
-            new_name = f"{new_path.name}{source.suffix}"
 
-        destination = self._resolve_destination(source.with_name(new_name))
+        # 👉 Si aucun suffixe → on garde celui d'origine
+        if new_path.suffix == "":
+            final_name = f"{new_path.name}{source.suffix}"
+        else:
+            # 👉 Si l'utilisateur met une extension, on la respecte
+            final_name = new_path.name
+
+        destination = self._resolve_destination(source.with_name(final_name))
 
         source.rename(destination)
         self.logger.info(f"Renamed: {source} -> {destination}")
